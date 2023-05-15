@@ -7,7 +7,7 @@ DB_PATH = "data/database.duckdb"
 
 # Clean DB for each test run
 if os.path.exists(DB_PATH):
-    os.remove("data/database.duckdb")
+    os.remove(DB_PATH)
 
 DB = duckdb.connect(DB_PATH)
 
