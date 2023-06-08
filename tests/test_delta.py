@@ -1,5 +1,5 @@
 import os, sys, pytest, deltalake as delta, duckdb, polars as pl
-sys.path.append('..')
+sys.path.append('../')
 import delta_io 
 
 DELTA_PATH = "data/data.delta"
