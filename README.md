@@ -1,5 +1,7 @@
 <h1 align="center"><b>DeltaDuck</b></h1>
 
+[![DeltaCI](https://github.com/DNYFZR/DeltaIO/actions/workflows/delta_ci.yml/badge.svg)](https://github.com/DNYFZR/DeltaIO/actions/workflows/delta_ci.yml)
+
 A delta lake full of ducks and polar bears....
 
 ---
