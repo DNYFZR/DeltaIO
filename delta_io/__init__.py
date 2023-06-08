@@ -1,4 +1,4 @@
-# DeltaDuck
+# DeltaIO Main
 
 import duckdb, polars as pl, deltalake as delta
 from typing import Union
@@ -48,13 +48,9 @@ def polarFromDelta(source: delta.table.DeltaTable):
 def polarToDelta(source: pl.DataFrame, path="data/data.delta", **kwargs):
     '''Load polars DataFrame to Delta'''
     
-    delta.write_deltalake(
-        table_or_uri=path,
-        data=source.to_arrow(),
-        **kwargs
-        )
-    
-    return delta.DeltaTable(path)
+    source.write_delta(target=path, **kwargs)
+    return True
+
 
 if __name__ == "__main__":
 
