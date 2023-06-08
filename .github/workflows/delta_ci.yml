@@ -8,6 +8,7 @@ on:
       - main
    paths:
       - delta_io/**
+      - tests/**
       - requirements.txt
       - .github/workflows/**
 
@@ -16,6 +17,7 @@ on:
       - main
    paths:
       - delta_io/**
+      - tests/**
       - requirements.txt
       - .github/workflows/**
 
